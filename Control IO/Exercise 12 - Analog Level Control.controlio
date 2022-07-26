@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlIO Version="v1.0.0">
+  <Properties SyncReset="true" CycleTime="10" />
+  <Diagram DiagramPosition="-560,-655" DiagramScale="0.783526166468458">
+    <NodeData Key="2" Location="-20 -80" NodeType="OutputFloat" MemMapAddress="1" />
+    <NodeData Key="3" Location="-30 -275" NodeType="OutputFloat" MemMapAddress="0" />
+    <NodeData Key="4" Location="-510 -385" NodeType="InputFloat" MemMapAddress="1" />
+    <NodeData Key="6" Location="-265 -205" NodeType="InternalCustomNode" AssemblyName="Function Blocks" NodeID="ControlIO.Plugins.FunctionBlocks.PID" />
+    <NodeData Key="7" Location="-535 5" NodeType="InputFloat" MemMapAddress="2" />
+    <NodeData Key="8" Location="-25 10" NodeType="OutputInt" MemMapAddress="0" NodeDescription="SP" />
+    <NodeData Key="5" Location="-35 -395" NodeType="OutputInt" MemMapAddress="1" />
+    <NodeData Key="9" Location="-540 -260" NodeType="InputFloat" MemMapAddress="0" />
+    <LinkData From="7" To="6" FromPort="Out-Double-0" ToPort="In-Double-1" NodeType="LinkData" />
+    <LinkData From="6" To="3" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="7" To="8" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="9" To="6" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+    <LinkData From="9" To="5" FromPort="Out-Double-0" ToPort="In-Double-0" NodeType="LinkData" />
+  </Diagram>
+</ControlIO>
